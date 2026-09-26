@@ -11,7 +11,14 @@ import org.junit.Assert.*
  */
 class ExampleUnitTest {
     @Test
-    fun addition_isCorrect() {
-        assertEquals(4, 2 + 2)
+    fun main() {
+        val elMeuNom = "Paul"
+        val jo = Persona(
+            nom = "Paul",
+            edat = 16,
+            entreteniments = listOf("Programar", "Llegir", "Esport", "Cinema", "Ajedrez", "Viatjar")
+        )
+
+        botDeSeguretat(jo, elMeuNom)
     }
 }
